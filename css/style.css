@@ -1,6 +1,5 @@
 header {
     background: linear-gradient(#484848, #272727);
-    height: 72px;
     border-bottom: 3px solid #07904e;
 }
 
@@ -14,6 +13,31 @@ header {
 
 .head_menu li {
     display: inline-block;
+    font-size: 18px;
+    padding: 30px 10px 30px 10px;
+    border-right: 1px solid black;
+}
+
+.head_menu a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.head_menu a:hover{
+    color: #5bff99;
+}
+
+.head_menu button{
+    background: linear-gradient(#ad1e1e, #6e1313);
+    padding: 10px;
+    height: 60px;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.14px;
+    outline: none;
+    border: 1px solid #ab1d1d;
+    cursor: pointer;
 }
 
 main{
@@ -129,6 +153,7 @@ form button{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 80px 0 60px 0;
 }
 
 .tab{
@@ -137,8 +162,8 @@ form button{
     justify-content: flex-start;
     position: relative;
     background: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 0 10px #000;
-    margin: 80px 5px 60px 0;
+    box-shadow: 0 0 3px #f8e400;
+    margin-right: 5px;
     max-width: 240px;
     overflow: hidden;
 }
@@ -147,6 +172,25 @@ form button{
     position: absolute;
     top: 120px;
     right: 5px;
+}
+
+.tab_row span{
+    display: block;
+    font-size: 45px;
+    max-width: 110px;
+    margin: 0 0 25px 10px;
+    float: left;
+}
+
+.tab_row span:last-child{
+    font-size: 17px;
+    max-width: 110px;
+    text-align: center;
+}
+
+.tab p{
+    font-size: 11px;
+    text-align: center;
 }
 
 .tab button{
@@ -185,6 +229,7 @@ form button{
     font-size: 22px;
     line-height: 43px;
     color: white;
+    margin-bottom: 25px;
 }
 
 .color_label1{
