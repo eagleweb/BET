@@ -6,7 +6,7 @@ header {
 }
 
 .container_header{
-    width: 960px;
+    width: 1000px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -19,42 +19,48 @@ header {
 
 main{
     background: url("../img/background.jpg") no-repeat center;
-    height: 830px;
-    /*background-size: cover;*/
+
+    background-size: cover;
 }
 
 .container_main{
     position: relative;
-    width: 960px;
+    width: 1000px;
     margin: auto;
 }
 
+.main_row1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
 form{
-    position: absolute;
     max-width: 270px;
+    margin: 25px 10px 0 0;
     padding: 20px 15px;
-    top: 25px;
-    border-radius: 8px;
-    background-color:rgba(0,0,0,0.3)
+    border-radius: 6px;
+    background-color:rgba(0,0,0,0.4)
 }
 
 form label{
     color: white;
     font-size: 24px;
     letter-spacing: 0.24px;
-
 }
 
 form p{
     color: white;
     font-size: 11px;
     letter-spacing: 0.11px;
+    margin-top: 10px;
 }
 
 form input{
     width: 100%;
     height: 40px;
-    margin: 15px 0 15px 0;
+    margin-top: 15px;
     border-radius: 10px;
     outline: none;
 }
@@ -72,10 +78,8 @@ form button{
 }
 
 .main_text{
-    position: absolute;
     max-width: 265px;
-    top: 25px;
-    left: 310px;
+    margin-top: 25px;
 }
 
 .main_text p{
@@ -84,13 +88,18 @@ form button{
     letter-spacing: 0.36px;
 }
 
+.main_row2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
 .main_button{
-    position: absolute;
-    max-width: 240px;
-    padding: 20px 12px;
-    top: 305px;
-    border-radius: 8px;
-    background-color:rgba(0,0,0,0.3)
+    padding: 20px 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    background-color:rgba(0,0,0,0.4)
 }
 
 .main_button p{
@@ -103,8 +112,9 @@ form button{
 
 .main_button button{
     background: linear-gradient(#1cbf71, #076a3b);
+    width: 270px;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 6px;
     color: white;
     font-size: 20px;
     letter-spacing: 0.2px;
@@ -112,14 +122,108 @@ form button{
     border: 0;
 }
 
-.sponsor{
+.main_row3{
     display: flex;
+    justify-content: space-between;
+
+}
+
+.tab{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.34) 0%, rgba(255, 255, 255, 0.34) 100%);
+    /*box-shadow: 0 0 10px #000;*/
+    margin: 80px 5px 60px 0;
+}
+
+.color_label1{
+    max-width: 240px;
+    padding-left: 10px;
+    background-color: #c1611a;
+    font-size: 22px;
+    line-height: 43px;
+    color: white;
+}
+
+.sponsor{
     background: #2d2d2d;
-    height: 77px;
+}
+
+.sponsor_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    padding: 20px 0 20px 0;
+    margin: auto;
 }
 
 footer{
-    display: flex;
     background: #212121;
-    height: 226px;
 }
+
+.footer_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer_tab{
+    color: #7d7d7d;
+    margin: 30px 0 60px 0;
+}
+
+.footer_tab p{
+    font-size: 16px;
+    letter-spacing: 0.16px;
+}
+
+.footer_tab hr{
+    color: #7d7d7d;
+    size: 1px;
+}
+
+.footer_tab ul{
+    text-align: center;
+}
+
+.copyright p{
+    color: #424242;
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    font-size: 10px;
+    letter-spacing: 0.1px;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
