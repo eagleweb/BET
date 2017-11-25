@@ -1,0 +1,125 @@
+header {
+    display: flex;
+    background: linear-gradient(#484848, #272727);
+    height: 72px;
+    border-bottom: 3px solid #07904e;
+}
+
+.container_header{
+    width: 960px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head_menu li {
+    display: inline-block;
+}
+
+main{
+    background: url("../img/background.jpg") no-repeat center;
+    height: 830px;
+    /*background-size: cover;*/
+}
+
+.container_main{
+    position: relative;
+    width: 960px;
+    margin: auto;
+}
+
+form{
+    position: absolute;
+    max-width: 270px;
+    padding: 20px 15px;
+    top: 25px;
+    border-radius: 8px;
+    background-color:rgba(0,0,0,0.3)
+}
+
+form label{
+    color: white;
+    font-size: 24px;
+    letter-spacing: 0.24px;
+
+}
+
+form p{
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.11px;
+}
+
+form input{
+    width: 100%;
+    height: 40px;
+    margin: 15px 0 15px 0;
+    border-radius: 10px;
+    outline: none;
+}
+
+form button{
+    background: linear-gradient(#fd0201, #a91d16);
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    outline: none;
+    border: 0;
+    float: right;
+}
+
+.main_text{
+    position: absolute;
+    max-width: 265px;
+    top: 25px;
+    left: 310px;
+}
+
+.main_text p{
+    color: white;
+    font-size: 36px;
+    letter-spacing: 0.36px;
+}
+
+.main_button{
+    position: absolute;
+    max-width: 240px;
+    padding: 20px 12px;
+    top: 305px;
+    border-radius: 8px;
+    background-color:rgba(0,0,0,0.3)
+}
+
+.main_button p{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    margin-bottom: 10px;
+}
+
+.main_button button{
+    background: linear-gradient(#1cbf71, #076a3b);
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    outline: none;
+    border: 0;
+}
+
+.sponsor{
+    display: flex;
+    background: #2d2d2d;
+    height: 77px;
+}
+
+footer{
+    display: flex;
+    background: #212121;
+    height: 226px;
+}
