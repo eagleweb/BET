@@ -12,6 +12,20 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: "PF Beau Sans Pro";
+    src: url("../fonts/PF Beau Sans Pro/pfbeausanspro-reg.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "PF Beau Sans Pro Bold";
+    src: url("../fonts/PF Beau Sans Pro/pfbeausanspro-bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
 .wrapper{
     font-family: ArialMT, sans-serif;
     display: flex;
@@ -38,6 +52,18 @@ header {
     font-size: 18px;
     padding: 30px 10px 30px 10px;
     border-right: 1px solid black;
+}
+
+.head-nav_item{
+    position: relative;
+}
+
+.head_menu span{
+    position: absolute;
+    color: #5bff99;
+    font-size: 14px;
+    top: 10px;
+    right: 5px;
 }
 
 .head_menu li:last-child{
@@ -140,12 +166,17 @@ form button{
 .main_text{
     max-width: 265px;
     margin-top: 25px;
+    font-family: "PF Beau Sans Pro", sans-serif;
 }
 
 .main_text p{
     color: white;
     font-size: 36px;
     letter-spacing: 0.36px;
+}
+
+.main_text span{
+    font-family: "PF Beau Sans Pro Bold", sans-serif;
 }
 
 .main_row2{
