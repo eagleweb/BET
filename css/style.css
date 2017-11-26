@@ -195,10 +195,9 @@ form button{
 }
 
 .tab_row span{
-    display: block;
     font-size: 45px;
     max-width: 110px;
-    margin: 0 0 25px 10px;
+    margin: 0 0 25px 5px;
     float: left;
     font-family: ArialMTBold, sans-serif;
 }
