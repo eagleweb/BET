@@ -20,7 +20,7 @@
                         <li class="head-nav_item"><a href="#">3D SLOTLAR</a></li>
                         <li class="head-nav_item"><a href="#">POKER</a></li>
                         <li class="head-nav_item"><a href="#">BONUSLAR</a></li>
-                        <button>Canlı Yardım</button>
+                        <li class="head-nav_item"><button>Canlı Yardım</button></li>
                     </ul>
                 </nav>
             </div>
@@ -28,12 +28,12 @@
         <main>
             <div class="container_main">
                 <div class="main_row1">
-                    <form action="#">
+                    <form id="myForm" action="#">
                         <label>Giriş yapın</label>
-                        <input type="text" placeholder="Kulanıcı adınız">
-                        <input type="text" placeholder="Şifreniz">
+                        <input type="text" name="input1" placeholder="Kulanıcı adınız">
+                        <input type="text" name="input2" placeholder="Şifreniz">
                         <p>Şifrenizi mi unuttunuz?</p>
-                        <button type="submit">GİRİŞ YAP</button>
+                        <button type="submit" form="myForm">GİRİŞ YAP</button>
                     </form>
                     <div class="main_text">
                         <p>%100 YATIRIM BONUSU !</p>
@@ -157,5 +157,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

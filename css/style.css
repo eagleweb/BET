@@ -14,6 +14,10 @@
 
 .wrapper{
     font-family: ArialMT, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* высота веб-страницы больше или равна высоте окна браузера */
+    margin: 0;
 }
 
 header {
@@ -29,11 +33,16 @@ header {
     align-items: center;
 }
 
-.head_menu li {
+.head_menu li{
     display: inline-block;
     font-size: 18px;
     padding: 30px 10px 30px 10px;
     border-right: 1px solid black;
+}
+
+.head_menu li:last-child{
+    border-right: none;
+    padding: 0;
 }
 
 .head_menu a{
@@ -48,7 +57,6 @@ header {
 .head_menu button{
     background: linear-gradient(#ad1e1e, #6e1313);
     padding: 10px;
-    height: 60px;
     border-radius: 8px;
     color: white;
     font-size: 14px;
@@ -56,11 +64,19 @@ header {
     outline: none;
     border: 1px solid #ab1d1d;
     cursor: pointer;
+    max-width: 100px;
+}
+
+.head_menu button:before{
+    display: block;
+    float: left;
+    content: url("../img/icons/icon_call.png");
 }
 
 main{
     background: url("../img/background.jpg") no-repeat center;
     background-size: cover;
+    flex: 1;
 }
 
 .container_main{
