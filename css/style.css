@@ -262,6 +262,71 @@ form button{
     margin: auto;
 }
 
+.bg-logo{
+    width: 75px; height: 27px;
+    background: url('../img/sponsor_sprites.png') -732px -10px;
+}
+
+.bg-sponsor1 {
+    width: 26px; height: 40px;
+    background: url('../img/sponsor_sprites.png') -10px -10px;
+}
+
+.bg-sponsor2 {
+    width: 70px; height: 32px;
+    background: url('../img/sponsor_sprites.png') -642px -10px;
+}
+
+.bg-sponsor3 {
+    width: 69px; height: 14px;
+    background: url('../img/sponsor_sprites.png') -553px -10px;
+}
+
+.bg-sponsor4 {
+    width: 81px; height: 17px;
+    background: url('../img/sponsor_sprites.png') -928px -10px;
+}
+
+.bg-sponsor5 {
+    width: 81px; height: 10px;
+    background: url('../img/sponsor_sprites.png') -827px -10px;
+}
+
+.bg-sponsor6 {
+    width: 46px; height: 19px;
+    background: url('../img/sponsor_sprites.png') -185px -10px;
+}
+
+.bg-sponsor7 {
+    width: 45px; height: 18px;
+    background: url('../img/sponsor_sprites.png') -120px -10px;
+}
+
+.bg-sponsor8 {
+    width: 51px; height: 19px;
+    background: url('../img/sponsor_sprites.png') -319px -10px;
+}
+
+.bg-sponsor9 {
+    width: 44px; height: 18px;
+    background: url('../img/sponsor_sprites.png') -56px -10px;
+}
+
+.bg-sponsor10 {
+    width: 48px; height: 9px;
+    background: url('../img/sponsor_sprites.png') -251px -10px;
+}
+
+.bg-sponsor11 {
+    width: 66px; height: 17px;
+    background: url('../img/sponsor_sprites.png') -467px -10px;
+}
+
+.bg-sponsor12 {
+    width: 57px; height: 13px;
+    background: url('../img/sponsor_sprites.png') -390px -10px;
+}
+
 footer{
     background: #212121;
 }
