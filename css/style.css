@@ -1,3 +1,21 @@
+@font-face {
+    font-family: "ArialMT";
+    url("../fonts/ArialMT/ARI.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "ArialMTBold";
+    src: url("../fonts/ArialMTBold/Arial-BoldMT.otf") format("opentype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+.wrapper{
+    font-family: ArialMT, sans-serif;
+}
+
 header {
     background: linear-gradient(#484848, #272727);
     border-bottom: 3px solid #07904e;
@@ -100,6 +118,7 @@ form button{
     border-color: #fd0201;
     cursor: pointer;
     float: right;
+    font-family: ArialMTBold, sans-serif;
 }
 
 .main_text{
@@ -146,6 +165,7 @@ form button{
     outline: none;
     cursor: pointer;
     border-color: #1cbf71;
+    font-family: ArialMTBold, sans-serif;
 }
 
 .main_row3{
@@ -180,6 +200,7 @@ form button{
     max-width: 110px;
     margin: 0 0 25px 10px;
     float: left;
+    font-family: ArialMTBold, sans-serif;
 }
 
 .tab_row span:last-child{
