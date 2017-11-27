@@ -99,6 +99,21 @@ header {
     content: url("../img/icons/icon_call.png");
 }
 
+nav input[type="checkbox"] {
+    display: none;
+}
+nav label {
+    display: none;
+    padding: 5px 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+nav label:hover{
+    color: #5bff99;
+}
+
 main{
     background: url("../img/background.jpg") no-repeat center;
     background-size: cover;
@@ -447,7 +462,89 @@ footer{
     padding-bottom: 20px;
 }
 
+@media only screen and (min-width : 320px) and (max-width : 480px) {
 
+    .container_header{
+        justify-content: center;
+    }
+
+    .logo{
+        padding-right: 30px;
+    }
+
+    nav label{
+        display: inline-block;
+    }
+    nav > ul {
+        display: none;
+    }
+    nav input[type="checkbox"]:checked ~ label + ul {
+        display: block;
+    }
+
+    .head_menu li{
+        display: block;
+        font-size: 16px;
+        line-height: 30px;
+        padding: 0;
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    .head-nav_item button{
+        display: none;
+    }
+
+    .head_menu span{
+        display: none;
+    }
+
+    main{
+        background: #212121;
+    }
+
+    .main_row1{
+        justify-content: center;
+    }
+
+    form{
+        margin: 10px 0 0 0;
+    }
+
+    .main_row2{
+        justify-content: center;
+        margin: 0;
+    }
+
+    .main_text{
+        display: none;
+    }
+
+    .main_row3{
+        justify-content: center;
+        padding: 10px 0 0 0;
+    }
+
+    .tab{
+        margin: 10px 0 0 0;
+    }
+
+    .sponsor{
+        display: none;
+    }
+
+    .footer_row{
+        justify-content: center;
+    }
+
+    .footer_tab{
+        margin: 10px 0 10px 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* стили */
+}
 
 
 
