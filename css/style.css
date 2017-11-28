@@ -30,7 +30,7 @@
     font-family: ArialMT, sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;  /* высота веб-страницы больше или равна высоте окна браузера */
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -66,11 +66,6 @@ header {
     right: 5px;
 }
 
-.head_menu li:last-child{
-    border-right: none;
-    padding: 0;
-}
-
 .head_menu a{
     text-decoration: none;
     color: #ffffff;
@@ -80,10 +75,10 @@ header {
     color: #5bff99;
 }
 
-.head_menu button{
+.container_header button{
     background: linear-gradient(#ad1e1e, #6e1313);
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 4px;
     color: white;
     font-size: 14px;
     letter-spacing: 0.14px;
@@ -93,7 +88,7 @@ header {
     max-width: 100px;
 }
 
-.head_menu button:before{
+.container_header button:before{
     display: block;
     float: left;
     content: url("../img/icons/icon_call.png");
@@ -232,10 +227,10 @@ form button{
 
 .main_row3{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 80px 0 60px 0;
+    padding: 80px 0 50px 0;
 }
 
 .tab{
@@ -245,7 +240,7 @@ form button{
     position: relative;
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0 0 3px #f8e400;
-    margin-right: 5px;
+    margin: 0 5px 10px 0;
     max-width: 240px;
     overflow: hidden;
 }
@@ -465,15 +460,20 @@ footer{
 @media only screen and (max-width : 480px) {
 
     .container_header{
-        justify-content: center;
-    }
-
-    .logo{
-        padding-right: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     nav label{
         display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 20px;
+        width: 20px;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 24 24' enable-background='new 0 0 24 24' xml:space='preserve'><rect width='24' height='4'/><rect width='24' height='4' y='14'/><rect width='24' height='4' y='7'/></svg>");
+        background-size: contain;
     }
     nav > ul {
         display: none;
@@ -484,6 +484,8 @@ footer{
 
     .head_menu li{
         display: block;
+        width: 200px;
+        text-align: center;
         font-size: 16px;
         line-height: 30px;
         padding: 0;
@@ -491,7 +493,7 @@ footer{
         border-bottom: 1px solid black;
     }
 
-    .head-nav_item button{
+    .container_header button{
         display: none;
     }
 
@@ -544,15 +546,20 @@ footer{
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
     .container_header{
-        justify-content: center;
-    }
-
-    .logo{
-        padding-right: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
     }
 
     nav label{
         display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 20px;
+        width: 20px;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 24 24' enable-background='new 0 0 24 24' xml:space='preserve'><rect width='24' height='4'/><rect width='24' height='4' y='14'/><rect width='24' height='4' y='7'/></svg>");
+        background-size: contain;
     }
     nav > ul {
         display: none;
@@ -563,6 +570,8 @@ footer{
 
     .head_menu li{
         display: block;
+        width: 200px;
+        text-align: center;
         font-size: 16px;
         line-height: 30px;
         padding: 0;
@@ -570,7 +579,7 @@ footer{
         border-bottom: 1px solid black;
     }
 
-    .head-nav_item button{
+    .container_header button{
         display: none;
     }
 
@@ -620,11 +629,64 @@ footer{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* стили */
-}
 
-@media only screen and (min-width: 992px) and (max-width: 1000px) {
-    /* стили */
+    .head_menu li{
+        display: inline-block;
+        font-size: 14px;
+        padding: 20px 5px 20px 5px;
+        border-right: 1px solid black;
+    }
+
+    .container_header button{
+        padding: 5px;
+        font-size: 12px;
+        letter-spacing: 0.12px;
+    }
+
+    .head_menu span{
+        display: none;
+    }
+
+    .main_row1{
+        justify-content: center;
+    }
+
+    form{
+        margin: 10px 20px 0 0;
+    }
+
+    .main_row2{
+        justify-content: center;
+        margin: 0;
+    }
+
+    .main_row3{
+        justify-content: space-around;
+        padding: 10px 0 0 0;
+    }
+
+    .tab{
+        flex-basis: 50%;
+        margin: 10px 5px 10px 0;
+    }
+
+    .sponsor{
+        display: none;
+    }
+
+    .footer_row{
+        justify-content: center;
+    }
+
+    .footer_tab{
+        flex-basis: 50%;
+        text-align: center;
+        margin: 10px 0 10px 0;
+    }
+
+    .footer_tab hr{
+        max-width: 200px;
+    }
 }
 
 
